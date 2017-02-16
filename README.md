@@ -129,7 +129,6 @@ One way to handle this is to have a note in your README with something like, "He
 
 >Oh my god, it broke everything
 
->Taste unemployment
 > #### - Steven Nuñez
 
 Software is complex. One change to a dependency can completely break your app. We can remedy this by enforcing that we use a specific version of the gem. But this, too, has its problems. How do you enforce this? Are you going to trust that everyone has the right version?
@@ -155,6 +154,7 @@ With this, you can make sure everyone working on your app is using the right ver
 Getting started with Bundler is super easy. To create a Gemfile, type `bundle init` in your terminal. You'll notice we created one for you in the repo so running `bundle init` will give you an error.
 
 ###  Anatomy of Bundler files
+>Taste unemployment
 There's only one file Bundler requires you have (Gemfile), the other files are conventional for a typical Ruby application, but not required by the use of Bundler for gem management.
 
 - Gemfile - This file is required by Bundler and contains a source, and a list of file requirements. That's all.
@@ -216,11 +216,11 @@ require_relative '../config/environment'
 
 That's it! Now we can access all of our gems from our `run.rb` file.
 
-### require and require_relative 
+### require and require_relative
 
-You will notice that we use two different require methods while setting up our environment and bin files. 
+You will notice that we use two different require methods while setting up our environment and bin files.
 
-While both of these methods might look similiar they do different things. Both load a file based on the filename passed in as a parameter and return true if the file was found and loaded successfully and they will raise a LoadError if it returns false. However... 
+While both of these methods might look similiar they do different things. Both load a file based on the filename passed in as a parameter and return true if the file was found and loaded successfully and they will raise a LoadError if it returns false. However...
 
 * [require](http://apidock.com/ruby/Kernel/require) takes an absolute path for the filename, so the file must either be in the directory from which the application is being run or in one of the directories in your shell's PATH variable (which often includes the directory containing the gems you've installed).
 
