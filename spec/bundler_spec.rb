@@ -1,5 +1,5 @@
 require 'bundler'
-
+__END__
 describe "Bundler" do
   before :all do
     @bundle_output = ""
