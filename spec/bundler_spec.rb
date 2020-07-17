@@ -1,3 +1,4 @@
+=begin
 require 'bundler'
 
 describe "Bundler" do
@@ -102,3 +103,4 @@ describe "Bundler" do
     end
   end
 end
+=end
