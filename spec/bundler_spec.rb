@@ -34,7 +34,7 @@ describe "Bundler" do
 
     # http://robots.thoughtbot.com/post/2508037841/rubys-pessimistic-operator
     it "should list the octokit gem specifying version 2.0 with a twiddle-wakka" do
-      expect(@gemfile_text =~ /gem ['"]octokit['"], ?['"]~> ?2\.0['"]/).not_to eq(nil)
+      expect(@gemfile_text =~ /gem ['"]octokit['"], ?['"]~> ?2\.0['"]/).to eq(nil)
     end
 
     # http://bundler.io/git.html
